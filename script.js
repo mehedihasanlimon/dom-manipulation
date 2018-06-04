@@ -29,9 +29,14 @@ function redirectToGoogle(){
     window.location.assign('http://google.com')
 }
 /* Task 4 using jQuery */
-//task 4
-$ ('#addtext4').click(function(event){
-    
-    var paragraph = $('<p>').text('hello world')
-    $('#task4').append(paragraph)
+//task 4a
+$('addtext4').click(function(event){
+    var parragraph =$('<p>').text('hello world')
+    $('#task4a').append(parragraph)
 })
+
+//task 4b
+function changeBG(event){
+    var color =event.target.innerText.toLowercase();
+    $('body').css('background-Color',color)
+}
